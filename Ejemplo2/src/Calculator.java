@@ -3,7 +3,7 @@ public class Calculator implements Runnable {
 
     public void run() {
         long current = 1L;
-        long max = 20000L; // pocos numeros que pasa con prioridad? < 200
+        long max = 20000L; // con un num menor no se tendria tan en cuenta la prioridad
         long numPrimes = 0L;
 
         System.out.printf("Thread '%s': START\n",
@@ -18,7 +18,7 @@ public class Calculator implements Runnable {
                 Thread.currentThread().getName(), numPrimes);
     }
 
-    private boolean isPrime(long number) {
+    public boolean isPrime(long number) {
         if(number <= 2) {
             return true;
         }

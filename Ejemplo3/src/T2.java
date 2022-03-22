@@ -4,7 +4,7 @@ public class T2 extends Tarea {
 
     public void run() {
         while (true) {
-            Tarea.y2 = Tarea.y1 + 1;
+            Tarea.y2 = Tarea.y1 + 1; // "INSTRUCCION ESTRELLA 2"
 
             try {
                 Thread.sleep(0);
@@ -13,8 +13,8 @@ public class T2 extends Tarea {
                 e.printStackTrace();
             }
 
-            while ((!(Tarea.y1 == 0) && !(Tarea.y2 <= Tarea.y1))) {
-            }
+            //Espera activa hasta que se cumpla alguna de las condiciones
+            while ((!(Tarea.y1 == 0) && !(Tarea.y2 < Tarea.y1))) { }
 
             Tarea.critical++;
 
@@ -24,6 +24,7 @@ public class T2 extends Tarea {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
+
 
             Tarea.critical--;
             Tarea.y2 = 0;

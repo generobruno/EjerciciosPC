@@ -3,10 +3,11 @@ public class T1 extends Tarea{
 
     public void run() {
         while (true) {
-            Tarea.y1 = Tarea.y2 + 1;
+            Tarea.y1 = Tarea.y2 + 1; // "INSTRUCCION ESTRELLA 1"
 
-            while ((!(Tarea.y2 == 0) && !(Tarea.y1 <= Tarea.y2))) {
-            }
+
+            //Espera activa hasta que se cumpla alguna de las condiciones
+            while ((!(Tarea.y2 == 0) && !(Tarea.y1 <= Tarea.y2))) { }
 
             //Instruccion de Sleep por 0 milisegundos.
             try {
