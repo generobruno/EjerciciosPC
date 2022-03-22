@@ -18,7 +18,7 @@ public class Calculator implements Runnable {
                 Thread.currentThread().getName(), numPrimes);
     }
 
-    private boolean isPrime(long number) {
+    public boolean isPrime(long number) {
         if(number <= 2) {
             return true;
         }
