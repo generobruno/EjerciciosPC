@@ -20,12 +20,12 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// Creates the Runnable object and the Thread to run it
-		FileSearch searcher = new FileSearch("C:\\", "log.txt");
+		FileSearch searcher = new FileSearch("C:\\", "Users");
 		Thread thread = new Thread(searcher);
 
 		// Starts the Thread
-		//thread.start();
-		thread.run();
+		thread.start();
+		//thread.run();
 
 		// Wait for ten seconds
 		try {

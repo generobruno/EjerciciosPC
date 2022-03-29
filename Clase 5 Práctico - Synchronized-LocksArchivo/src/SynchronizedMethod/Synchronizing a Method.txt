@@ -1,0 +1,26 @@
+#Synchronizing a Method
+
+En el siguiente ejemplo se utiliza uno de los métodos básicos
+de sincronización.
+
+El uso de la palabra clave SYNCHRONIZED para controlar el
+acceso concurrente a:
+- Un método
+- Un bloque de código.
+
+Sólo un hilo en ejecución puede acceder al mismo tiempo a
+un método/código que tenga en su definición la palabra
+synchronized.
+
+Cada método synchronized es una sección crítica.
+Java permite la ejecución de solo un método
+sincronizado (SC) por instancia de objeto*.
+Si otro hilo intenta acceder a cualquier otro método
+declarado synchronized del mismo objeto: Será suspendido
+hasta que el primer hilo finalize su ejecución*.
+
+Los métodos estáticos tienen otro comportamiento. Solo
+un hilo puede acceder a un método estático synchronized;
+pero otro hilo puede acceder a un método no estático
+synchronized. Si ambos métodos modifican las mismas variables
+puede generar inconsistencia.

@@ -1,0 +1,62 @@
+#Ejemplo SC
+
+Una playa de estacionamiento que posee:
+- Caja: Contabiliza el dinero de los vehículos.
+- Estadística: Posee la cantidad de autos y motos
+que hay en la playa de estacionamiento. Cuando un
+auto sale se encarga de ejecutar el pago en la Caja.
+- Sensor: Setecta los vehículos que ingresan y salen
+de la playa, y actualiza el Estado.
+
+Paso a paso:
+1) Se crea la clase ParkingCash que posee 2 atributos privados,
+el costo de un vehículo y el total de dinero recaudado.
+1.1) Implementar el método vehiclePay() que incrementará el valor
+del dinero recaudado. Solo un auto a la vez puede acceder a la
+caja, por lo que este método deberá estar sincronizado.
+1.2) Implementar el método close() para cerrar la caja e imprimir
+el total recaudado.
+2) Se crea la clase ParkingStats que posee:
+- Dos atributos, uno con la cantidad de autos y el otro con la
+cantidad de motos en la playa.
+- Dos atributos del tipo Object, que van a servir para la sincronización
+de bloques de código. Uno para la entrada y salida de autos, y el
+otro para la entrada y salida de motos.
+- Un atributo más que es la referencia al ParkingCash.
+2.1) Implementar los métodos carComeIn(), carGoOut(),
+motoComeIn() y motoGoOut(). Cada uno de los métodos debe poder
+incrementar/decrementar el valor de la cantidad de vehículos de
+manera segura. Para ello, se puede sincronizar un bloque de código,
+utilizando los objetos creados como llaves.
+2.2) Implementar los métodos getNumberCars() y getNumberMotorcycles().
+También deben leer las varibales de cantidades de vehículos de manera
+segura sincronizandose.
+3) Se crea la clase Sensor, que tiene un atributo que es la referencia
+al Estado de la playa. Sensor implementa la interfaz Runnable, por lo
+que tiene que sobreescribir el método run(). Cada hilo que ejecute
+Sensor va a hacer cierta lógica donde entran y salen autos y motos de
+la playa.
+4) Se crea la clase Main, donde:
+- Se crea la Caja de la playa.
+- Se crea el Estado de la playa.
+- Se crean n Sensores y n hilos para ejecutar los sensores.
+- Se ejecutan todos los hilos.
+- El main ejecuta un join() a cada hilo.
+- Se cierra la caja y se imprime por pantalla el total de autos
+y motos que quedaron en la playa (va a depender de la implementación
+del Sensor).
+
+Como funciona:
+1) Se incrementa y decrementa la cantidad de autos y motos en igual
+cantidad de veces.
+2) Es esperable que el valor final de la cantidad de autos y motos
+sea 0.
+3) Hemos intentado forzar un error usando una variable temporal e
+introduciendo un delay.
+4) Cada auto y moto que sale de la playa incrementa la variable de
+recaudación.
+5) Es esperable que al finalizar el programa, el total de recaudación
+se el total de vehículos que salieron de la playa multiplicado por
+el costo.
+6) Si quiere observar los problemas de la concurrencia elimine las
+palabras synchronized de métodos y bloques de código.

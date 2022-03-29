@@ -75,10 +75,12 @@ public class FileSearch implements Runnable {
 				}
 			}
 		}
+
 		// Check the interruption
-		if (Thread.interrupted()) {
+		if (Thread.interrupted()) { //Pregunta si el thread actual fue interrumpido, es equivalente hacer Thread.currentThread().isInterrupted();
 			throw new InterruptedException();
 		}
+
 	}
 
 	/**
