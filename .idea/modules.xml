@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Clase 5 Práctico - Synchronized-LocksArchivo/Clase 5 Práctico - Synchronized-LocksArchivo.iml" filepath="$PROJECT_DIR$/Clase 5 Práctico - Synchronized-LocksArchivo/Clase 5 Práctico - Synchronized-LocksArchivo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase 6 Práctico - ReadWriteLocks - Fairness - Semáforos/Clase 6 Práctico - ReadWriteLocks - Fairness - Semáforos.iml" filepath="$PROJECT_DIR$/Clase 6 Práctico - ReadWriteLocks - Fairness - Semáforos/Clase 6 Práctico - ReadWriteLocks - Fairness - Semáforos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Clase 6 Práctico - ReadWriteLocks-Fairness-Semáforos/Clase 6 Práctico - ReadWriteLocks-Fairness-Semáforos.iml" filepath="$PROJECT_DIR$/Clase 6 Práctico - ReadWriteLocks-Fairness-Semáforos/Clase 6 Práctico - ReadWriteLocks-Fairness-Semáforos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejemplo2/Ejemplo2.iml" filepath="$PROJECT_DIR$/Ejemplo2/Ejemplo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejemplo3/Ejemplo3.iml" filepath="$PROJECT_DIR$/Ejemplo3/Ejemplo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploInterrupt/EjemploInterrupt.iml" filepath="$PROJECT_DIR$/EjemploInterrupt/EjemploInterrupt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploSemaphore/EjemploSemaphore.iml" filepath="$PROJECT_DIR$/EjemploSemaphore/EjemploSemaphore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploTeo1/EjemploTeo1.iml" filepath="$PROJECT_DIR$/EjemploTeo1/EjemploTeo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploTeoProdConsumidor/EjemploTeoProdConsumidor.iml" filepath="$PROJECT_DIR$/EjemploTeoProdConsumidor/EjemploTeoProdConsumidor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio1/Ejercicio1.iml" filepath="$PROJECT_DIR$/Ejercicio1/Ejercicio1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/EjerciciosPC.iml" filepath="$PROJECT_DIR$/.idea/EjerciciosPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterruptClock/InterruptClock.iml" filepath="$PROJECT_DIR$/InterruptClock/InterruptClock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterruptException-FileSearcher/InterruptException-FileSearcher.iml" filepath="$PROJECT_DIR$/InterruptException-FileSearcher/InterruptException-FileSearcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JoinLoaders/JoinLoaders.iml" filepath="$PROJECT_DIR$/JoinLoaders/JoinLoaders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Join_AlumnosMensajes/Join_AlumnosMensajes.iml" filepath="$PROJECT_DIR$/Join_AlumnosMensajes/Join_AlumnosMensajes.iml" />
+    </modules>
+  </component>
+</project>
