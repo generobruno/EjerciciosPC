@@ -9,7 +9,12 @@ public class Main {
         Task task = new Task();
         Thread thread = new Thread(task);
         thread.setUncaughtExceptionHandler(new ExceptionHandler());
-        thread.start();
+
+        //try {
+            thread.start();
+        //} catch (NumberFormatException nfe) {
+        //    System.out.println("I got the exception");
+        //}
 
         try {
             thread.join();

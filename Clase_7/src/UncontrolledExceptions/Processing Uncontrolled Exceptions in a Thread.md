@@ -11,7 +11,7 @@ Cuando una excepción *checked* es lanzada dentro de un método run() de un
 objeto Thread, debemos tratarla, ya que un método run() no acpeta clausula
 throws.
 Cuando una excepción *unchecked* es lanzada dentro del método run() de un
-objeto Thread, el comportamiento por defeto es imprimir el stackTrace en
+objeto Thread, el comportamiento por defecto es imprimir el stackTrace en
 la consola y finalizar el programa. Afortunadamente, Java provee un mecanismo
 para tratarlas y evitar la finalización abrupta del programa.
 
