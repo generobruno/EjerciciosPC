@@ -14,7 +14,7 @@ public class PrintQueue {
     private Lock lockPrinters;
 
     public PrintQueue() {
-        semaphore = new Semaphore(3);
+        semaphore = new Semaphore(3,true); //TODO Cambiar fairness
         freePrinters = new boolean[3];
         for (int i=0; i<3; i++) {
             freePrinters[i] = true;
@@ -43,7 +43,7 @@ public class PrintQueue {
             e.printStackTrace();
         } finally {
             // Free the semaphore. If there are other threads waiting for the
-            // semaphore, the JVM selects one of this threads and give it the access.
+            // semaphore, the JVM selects one of these threads and give it the access.
             semaphore.release();
         }
 

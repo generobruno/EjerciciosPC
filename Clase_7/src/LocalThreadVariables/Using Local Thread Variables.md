@@ -19,5 +19,5 @@ Implementar el método run(), este método inicializa el atributo
 startDate, imprime su valor por la consola, se duerme un número random
 de tiempo y vuelve a escribirlo.
 Implemente la clase Main. Este método debe crear un objeto Unsafe Task
-y lanzar 3 hilos con igual argumento (durmiendo 2 segundoes entre
+y lanzar 3 hilos con igual argumento (durmiendo 2 segundos entre
 creación).

@@ -48,7 +48,7 @@ Valor inicial 1 binario.
 Otros métodos interesantes:
     - acquireUninterruptibly(): En el método acquire() cuando el contador interno
 está en 0, el hilo se bloquea. Durante este tiempo el hilo puede ser interrumpido
-y lanzar una excepción, con éste método el hilo ignora la interrupción y no lanza
+y lanzar una excepción, con este método el hilo ignora la interrupción y no lanza
 excepciones.
     - tryAcquire(): Este método intenta adquirir el semáforo. Si puede, el mismo
 devuelve true y lo toma. En el caso contrario devuelve false en vez de bloquearse.

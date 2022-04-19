@@ -29,6 +29,8 @@ b) Crea 5 threads y 5 objetos Reader.
 c) Crea 1 Thread y 1 objeto Writer.
 d) Lanza ejecución de todos los hilos.
 
+TENER CUIDADO: Los locks mal utilizados pueden llevar a deadlock.
+
 Luego de la ejecución:
 ¿Cuándo será óptima la utilización de ReadWriteLock?
 A) Un sistema de base de datos en el que muy esporádicamente se modifican
@@ -36,4 +38,4 @@ los valores y se accede y se consulta continuamente por muchos lectores?
 B) Un sistema de base de datos en la cual los precios cambian continuamente
 y hay muy poco acceso de consultas a la misma?
 
-TODO: Responder
+RTA: El caso A.

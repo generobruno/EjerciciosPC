@@ -32,7 +32,8 @@ a) SAME.
 La clave de este ejercicio es la clase PrintQueue:
  - El semáforo creado es inicializado en 3, limitando el acceso a los 3 primeros
 hilos que llamen al método acquire(). A través de esto los hilos accederán a la
-sección crítica.
+sección crítica. EL VALOR DE INICIALIZACIÓN DEL SEMÁFORO SON LOS RECURSOS DISPONIBLES
+QUE HAY.
  - En esta sección crítica los hilos obtienen un índice de impresora a utilizar.
 Esta parte esta implementada para mayor realismo, pero no utiliza semáforos.
 

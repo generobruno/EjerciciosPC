@@ -10,6 +10,8 @@ public class Main {
         Thread thread = new Thread(task);
         thread.setUncaughtExceptionHandler(new ExceptionHandler());
 
+        // El try-catch no recibirá excepción, ya que esta no la lanza el main
+        // sino, el hilo de task.
         //try {
             thread.start();
         //} catch (NumberFormatException nfe) {
