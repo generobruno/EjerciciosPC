@@ -4,6 +4,7 @@ public class FacturaB extends Factura {
         super(id, importe);
     }
 
+    @Override
     public double getImporteIva() {
         return this.importe * 1.21;
     }
